@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./webpage.css">
+    <link rel="stylesheet" href="./helloworldbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
     <body>
          <!-- navbar below here! -->
@@ -12,6 +19,248 @@
             <a href="#about"><i class="fa fa-fw fa-user"></i>About</a>
             <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
         </div>
+
+     <div id="spacer"></div>
+        <!-- introduction below here! -->
+        <div id="terminal-intro">
+        <style>
+            *{
+            --Text: #10E14C;
+                }
+
+            body {
+                background-color: #272727;
+                padding: 10px;
+                }
+            
+            .window-buttons {
+                height: 10px;
+                width: 10px;
+                position: relative;
+                top: 6px;
+                left: 6px;
+                color: darkred;
+                display: inline-block;
+                }
+            
+            .w-minimize {
+                left: 11px;
+                color: #ffc100;
+                }
+            
+            .w-fullScreen {
+                left: 16px;
+                color: darkgreen;
+                }
+            
+            .window-bar {
+                width: 500px;
+                box-sizing: border-box;
+                height: 25px;
+                background-color: #60C5E3;
+                margin: 0 auto;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                }
+            
+            .box {
+                background-color: #151515;
+                box-sizing: border-box;
+                width: 500px;
+                margin: 0 auto;
+                padding: 20px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            
+            p {
+                position: relative;
+                left: 50%;
+                margin-left: -8.5em;
+                text-align: left;
+                font-size: 1.25em;
+                font-family: monospace;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 0;
+            }
+            
+            span {
+                color: var(--Text);
+                font-weight: bold;
+            }
+            
+            .line1 {
+                color: var(--Text);
+                -webkit-animation: type .5s 1s steps(20, end) forwards;
+                -moz-animation: type .5s 1s steps(20, end) forwards;
+                -o-animation: type .5s 1s steps(20, end) forwards;
+                animation: type .5s 1s steps(20, end) forwards;
+            }
+            
+            .cursor1 {
+                -webkit-animation: blink 1s 2s 2 forwards;
+                -moz-animation: blink 1s 2s 2 forwards;
+                -o-animation: blink 1s 2s 2 forwards;
+                animation: blink 1s 2s 2 forwards;
+            }
+            
+            .line2 {
+                color: var(--Text);
+                -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+                -moz-animation: type .5s 4.25s steps(20, end) forwards;
+                -o-animation: type .5s 4.25s steps(20, end) forwards;
+                animation: type .5s 4.25s steps(20, end) forwards;
+            }
+            
+            .cursor2 {
+                -webkit-animation: blink 1s 5.25s 2 forwards;
+                -moz-animation: blink 1s 5.25s 2 forwards;
+                -o-animation: blink 1s 5.25s 2 forwards;
+                animation: blink 1s 5.25s 2 forwards;
+            }
+            
+            .line3 {
+                color: var(--Text);
+                -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+                -moz-animation: type .5s 7.5s steps(20, end) forwards;
+                -o-animation: type .5s 7.5s steps(20, end) forwards;
+                animation: type .5s 7.5s steps(20, end) forwards;
+            }
+            
+            .cursor3 {
+                -webkit-animation: blink 1s 8.5s 2 forwards;
+                -moz-animation: blink 1s 8.5s 2 forwards;
+                -o-animation: blink 1s 8.5s 2 forwards;
+                animation: blink 1s 8.5s 2 forwards;
+            }
+            
+            .line4 {
+                color: var(--Text);
+                -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+                -moz-animation: type .5s 10.75s steps(20, end) forwards;
+                -o-animation: type .5s 10.75s steps(20, end) forwards;
+                animation: type .5s 10.75s steps(20, end) forwards;
+            }
+            
+            .cursor4 {
+                -webkit-animation: blink 1s 11.5s infinite;
+                -moz-animation: blink 1s 8.5s infinite;
+                -o-animation: blink 1s 8.5s infinite;
+                animation: blink 1s 8.5s infinite;
+            }
+            
+            @-webkit-keyframes blink {
+                0% {
+                opacity: 0;
+                }
+                40% {
+                opacity: 0;
+                }
+                50% {
+                opacity: 1;
+                }
+                90% {
+                opacity: 1;
+                }
+                100% {
+                opacity: 0;
+                }
+            }
+            
+            @-moz-keyframes blink {
+                0% {
+                opacity: 0;
+                }
+                40% {
+                opacity: 0;
+                }
+                50% {
+                opacity: 1;
+                }
+                90% {
+                opacity: 1;
+                }
+                100% {
+                opacity: 0;
+                }
+            }
+            
+            @-o-keyframes blink {
+                0% {
+                opacity: 0;
+                }
+                40% {
+                opacity: 0;
+                }
+                50% {
+                opacity: 1;
+                }
+                90% {
+                opacity: 1;
+                }
+                100% {
+                opacity: 0;
+                }
+            }
+            
+            @keyframes blink {
+                0% {
+                opacity: 0;
+                }
+                40% {
+                opacity: 0;
+                }
+                50% {
+                opacity: 1;
+                }
+                90% {
+                opacity: 1;
+                }
+                100% {
+                opacity: 0;
+                }
+            }
+            
+            @-webkit-keyframes type {
+                to {
+                width: 17em;
+                }
+            }
+            
+            @-moz-keyframes type {
+                to {
+                width: 17em;
+                }
+            }
+            
+            @-o-keyframes type {
+                to {
+                width: 17em;
+                }
+            }
+            
+            @keyframes type {
+                to {
+                width: 17em;
+                }
+            }
+        </style>
+        <div w3-include-html="helloworldbox.html" ><div class="wrapper">
+            <div class="window-bar">
+                <div class="window-buttons w-close"><i class="fa-solid fa-x"></i></div>
+                <div class="window-buttons w-minimize"><i class="fa-solid fa-window-minimize"></i></div>
+                <div class="window-buttons w-fullScreen"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="box">
+                <!-- to explain: &#91; means: left square bracket; - &nbsp; means: no break  space; - and &ldquo; means: left double quotation mark;-->
+                <p class="line1">[ "Hello, my name is Nick,<span class="cursor1">_</span></p>
+                <p class="line2">"I am a Frontend Dev!<span class="cursor2">_</span></p>
+                <!-- &rdquo; means right double quotation marks; - &#93; means: right square bracket; -->
+                <p class="line3">And I look forward <br> to working with you!" ]<span class="cursor3">_</span></p>
+                <p class="line4">><span class="cursor4">_</span></p>
+            </div>
+        </div></div>
         
         <!-- introduction below here! -->
         <div class="intro-wrapper">
