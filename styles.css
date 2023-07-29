@@ -27,3 +27,28 @@
       display: block;
     }
   }
+
+  #spacer {
+    padding: 2%;
+  }
+
+  #terminal-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+  }
+
+  img {
+    height: auto;
+    width: 200px;
+  }
+
+  #portfolio{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
