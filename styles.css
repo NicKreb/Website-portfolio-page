@@ -60,3 +60,48 @@ body {
   bottom: 0px;
   z-index: 3;
 }
+
+
+.text {
+  font-family: 'Andale Mono';
+  font-weight: bolder;
+}
+
+.regular-font {
+  font-display: flex;
+  text-align: right;
+  font-size: 50px;
+}
+
+.corner {
+  display: flex;
+  position: absolute;
+  font-size: 90px;
+}
+
+.p {
+  bottom: 50%;
+  right: 75%;
+}
+
+.a {
+  bottom: 35%;
+  right: 70%;
+}
+
+.c{
+  bottom: 10%;
+  right: 60%;
+}
+
+.mirror{
+  transform: scale(-1, 1);
+  color: black;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1), rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  font-size: 50px;
+}
