@@ -1,5 +1,6 @@
 *{
 display: block;
+padding-left: 2%;
 }
 
 body {
@@ -7,24 +8,24 @@ body {
 }
 
 .text-wrapper{
-  font-family:'Lucida Sans';
+  font-family:'Andale mono';
   width: 60vw;
   height: 50vh;
 }
 
 .text-wrapper h1{
   color: white;
-  font-size: larger;
+  font-size: 8vh;
 }
 
 .text-wrapper h2 {
   color: lightgray;
-  font-size: large;
+  font-size: 5vh;
 }
 
 .text-wrapper h3 {
   color: darkgray;
-  font-size: medium;
+  font-size: 3vh;
 }
 
 .circle{
