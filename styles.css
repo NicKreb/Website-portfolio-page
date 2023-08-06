@@ -37,7 +37,7 @@ body {
 
 .magenta {
   background-color: #A35BD1;
-  height: 66vh;
+  height: 68vh;
   width: 38vw;
   right:  0px;
   bottom: 0px;
@@ -45,13 +45,13 @@ body {
 }
 
 .magenta:hover {
-  height: 68vh;
+  height: 70vh;
   width: 40vw;
 }
 
 .cyan {
   background-color: #5BBCD1;
-  height: 48vh;
+  height: 50vh;
   width: 28vw;
   right: 0px;
   bottom: 0px;
@@ -59,13 +59,13 @@ body {
 }
 
 .cyan:hover {
-  height: 50vh;
+  height: 52vh;
   width: 29vw;
 }
 
 .green {
   background-color: #5BD186;
-  height: 30vh;
+  height: 32vh;
   width: 18vw;
   right: 0px;
   bottom: 0px;
@@ -109,24 +109,19 @@ body {
 
 #purpleSvg{
   position: absolute;
-  transform: rotate(310deg);
-  -webkit-transform: rotate(310deg);
-  bottom: 150px;
-  left: 65px;
+  bottom: 0;
+  right: 0;
 }
+
 
 #cyanSvg{
   position: absolute;
-  transform: rotate(322deg);
-  -webkit-transform: rotate(322deg);
-  bottom: 160px;
-  right: 40px;
+  bottom: 0;
+  right: 0;
 }
 
 #greenSvg{
   position: absolute;
-  right: 50px;
-  bottom: 9 0px;
-  transform: rotate(322deg);
-  -webkit-transform: rotate(322deg);
-}
+  right: 0;
+  bottom: 0;
+} 
