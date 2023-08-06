@@ -7,6 +7,15 @@ body {
   background-color: black;
 }
 
+.fade-in-text{
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .text-wrapper{
   font-family:'Andale mono';
   width: 60vw;
