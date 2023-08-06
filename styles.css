@@ -77,6 +77,20 @@ body {
   width: 20vw;
 }
 
+.black {
+  display: flex;
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
+  width: 9vw;
+  right: 0px;
+  bottom: 0px;
+  z-index: 4;
+}
+
 .text {
   font-family: 'Andale Mono';
   font-weight: bolder;
