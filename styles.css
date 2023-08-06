@@ -79,3 +79,19 @@ body {
   bottom: 150px;
   left: 65px;
 }
+
+#cyanSvg{
+  position: absolute;
+  transform: rotate(322deg);
+  -webkit-transform: rotate(322deg);
+  bottom: 160px;
+  right: 40px;
+}
+
+#greenSvg{
+  position: absolute;
+  right: 50px;
+  bottom: 9 0px;
+  transform: rotate(322deg);
+  -webkit-transform: rotate(322deg);
+}
