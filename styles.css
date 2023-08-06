@@ -30,8 +30,9 @@ body {
 
 .circle{
   display: block;
- border-radius: 50% 0% 0% 0%;
+ border-radius: 90% 0% 0% 0%;
  position: absolute;
+ box-shadow: 10px 10px 50px black;
 }
 
 .magenta {
@@ -43,6 +44,11 @@ body {
   z-index: 1;
 }
 
+.magenta:hover {
+  height: 68vh;
+  width: 40vw;
+}
+
 .cyan {
   background-color: #5BBCD1;
   height: 48vh;
@@ -52,13 +58,23 @@ body {
   z-index: 2;
 }
 
-.yellow {
+.cyan:hover {
+  height: 50vh;
+  width: 29vw;
+}
+
+.green {
   background-color: #5BD186;
   height: 30vh;
   width: 18vw;
   right: 0px;
   bottom: 0px;
   z-index: 3;
+}
+
+.green:hover {
+  height: 34vh;
+  width: 20vw;
 }
 
 .text {
