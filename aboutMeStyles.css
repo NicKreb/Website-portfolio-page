@@ -1,0 +1,95 @@
+*{
+    font-family: 'Andale mono';
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 5em;
+    font-weight: bolder;
+    text-decoration: underline;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+.circle{
+    display: block;
+   border-radius: 90% 0% 0% 0%;
+   position: absolute;
+   box-shadow: 10px 10px 50px black;
+  }
+  .cyan {
+    background-color: darkmagenta;
+    height: 50vh;
+    width: 28vw;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+  }
+  
+  .cyan:hover {
+    height: 52vh;
+    width: 29vw;
+  }
+  
+  .green {
+    background-color: green;
+    height: 32vh;
+    width: 18vw;
+    right: 0px;
+    bottom: 0px;
+    z-index: 3;
+  }
+  
+  .green:hover {
+    height: 34vh;
+    width: 20vw;
+  }
+  
+  .black {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 18vh;
+    width: 9vw;
+    right: 0px;
+    bottom: 0px;
+    z-index: 4;
+  }
+  
+  .black:hover {
+    height: 20vh;
+    width: 11vw;
+  }
+  
+  .regular-font {
+    font-display: flex;
+    text-align: right;
+    font-size: 50px;
+  }
+  #cyanSvg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  #greenSvg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  } 
