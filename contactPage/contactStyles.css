@@ -21,6 +21,17 @@ body {
 
 #icon-shadow{
   box-shadow: 8px 8px 5px Black;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+
+li{
+  animation: rollIn 3s;
+}
+
+@keyframes rollIn {
+  0%{transform: translate3d(-50px, 0, 0);}
+  100%{transform: translate3d(0, 0, 0);}
 }
 
 .contact-list{
@@ -35,7 +46,9 @@ body {
 a{
   text-decoration: none;
   color: black;
+  text-decoration: underline;
 }
+
 .fa-github{
   color: white;
   background-color: black;
