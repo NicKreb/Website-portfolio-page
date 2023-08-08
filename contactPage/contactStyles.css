@@ -19,6 +19,43 @@ body {
     animation: fadeIn 3s;
 }
 
+#icon-shadow{
+  box-shadow: 8px 8px 5px Black;
+}
+
+.contact-list{
+  display: flex;
+  position: absolute;
+  animation: fadeIn 3s;
+  left: 2%;
+  font-size: 4em;
+  padding: 5%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.fa-github{
+  color: white;
+  background-color: black;
+}
+
+.fa-linkedin{
+  background-color: white;
+  color: darkblue;
+}
+
+.fa-envelope{
+  color: white;
+  background-color: black;
+}
+
+.fa-codepen{
+  color: white;
+  background-color: purple;
+}
+
 @keyframes fadeIn {
     0% {opacity: 0};
     100% {opacity: 1};
