@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Homepage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./darkmodestyle.css">
     <link rel="stylesheet" href="./webpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./darkmode.js"></script>
 </head>
-    <body>
-       <div class="fade-in-text text-wrapper">
+    <body onload="onload()">
+        <div class="fade-in-text text-wrapper">
             <h1>Hello, my name is Nicholas Krebeck,</h1>
             <h2>I am a web-developer,</h2>
             <h3>and I have experience in JavaScript, HTML, CSS, Bootstrap, React, and Python!</h3>
         </div>
+
+        <button class="dark-mode button" onclick="darkmode()">Change Mode!</button>
 
           <div class="circle magenta">
 
