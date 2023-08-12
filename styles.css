@@ -1,11 +1,9 @@
 *{
-display: block;
-padding-left: 2%;
-}
+  display: block;
+  padding-left: 2%;
+  font-family: 'Andale mono';
+  }
 
-body {
-  background-color: black;
-}
 
 .fade-in-text{
   animation: fadeIn 3s;
@@ -17,23 +15,22 @@ body {
 }
 
 .text-wrapper{
-  font-family:'Andale mono';
   width: 60vw;
   height: 50vh;
 }
 
 .text-wrapper h1{
-  color: white;
+  color: var(--h1-color);
   font-size: 8vh;
 }
 
 .text-wrapper h2 {
-  color: lightgray;
+  color: var(--h2-color);
   font-size: 5vh;
 }
 
 .text-wrapper h3 {
-  color: darkgray;
+  color: var(--h3-color);
   font-size: 3vh;
 }
 
@@ -45,7 +42,7 @@ body {
 }
 
 .magenta {
-  background-color: #A35BD1;
+  background-color: var(--projects);
   height: 68vh;
   width: 38vw;
   right:  0px;
@@ -59,7 +56,7 @@ body {
 }
 
 .cyan {
-  background-color: #5BBCD1;
+  background-color: var(--about-me);
   height: 50vh;
   width: 28vw;
   right: 0px;
@@ -73,7 +70,7 @@ body {
 }
 
 .green {
-  background-color: #5BD186;
+  background-color: var(--contacts);
   height: 32vh;
   width: 18vw;
   right: 0px;
@@ -88,8 +85,8 @@ body {
 
 .black {
   display: flex;
-  background-color: black;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--h1-color);
   font-size: 50px;
   align-items: center;
   justify-content: center;
@@ -106,7 +103,6 @@ body {
 }
 
 .text {
-  font-family: 'Andale Mono';
   font-weight: bolder;
 }
 
