@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: darkcyan;
+    background-color: var(--about-me);
 }
 
 #title{
@@ -15,7 +15,6 @@ body {
     padding: 20px;
     font-size: 5em;
     font-weight: bolder;
-    text-decoration: underline;
     animation: fadeIn 3s;
 }
 
@@ -31,7 +30,7 @@ body {
    box-shadow: 10px 10px 50px black;
   }
   .cyan {
-    background-color: darkmagenta;
+    background-color: var(--projects);
     height: 50vh;
     width: 28vw;
     right: 0px;
@@ -45,7 +44,7 @@ body {
   }
   
   .green {
-    background-color: green;
+    background-color: var(--contacts);
     height: 32vh;
     width: 18vw;
     right: 0px;
@@ -60,8 +59,8 @@ body {
   
   .black {
     display: flex;
-    background-color: black;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--h1-color);
     font-size: 50px;
     align-items: center;
     justify-content: center;
