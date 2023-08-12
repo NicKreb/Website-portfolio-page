@@ -1,0 +1,36 @@
+
+    body:not(.dark-mode) {
+      --background-color: white;
+      --projects: #E00000;
+      --about-me: #E04B00;
+      --contacts: #E09600;
+      --h1-color: black;
+      --h3-color: #D1D0D0;
+      --h2-color: darkgray;
+      --button-color: black;
+    }
+    
+    .dark-mode {
+      --background-color: black;
+      --projects: #3845D7;
+      --about-me: darkcyan;
+      --contacts: green;
+      --h1-color: white;
+      --h2-color: darkgrey;
+      --h3-color: lightgray;
+      --button-color: white;
+    }
+    
+    body {
+      background-color: var(--background-color);
+    }
+
+    .button{
+        background-color: Darkgrey;
+        color: var(--button-color);
+        display: flex;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        font-size: 40px;
+      }    
