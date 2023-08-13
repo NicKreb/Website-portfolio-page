@@ -14,6 +14,11 @@
   100% { opacity: 1; }
 }
 
+#NiKsvg {
+  width: 115px;
+  right: 5%;
+}
+
 .text-wrapper{
   width: 60vw;
   height: 50vh;
