@@ -7,7 +7,7 @@
       --h1-color: black;
       --h3-color: #D1D0D0;
       --h2-color: darkgray;
-      --button-color: black;
+      --bg-image: url(https://raw.githubusercontent.com/NicKreb/Website-portfolio-page/088fb0feb92a66d04f8129f23daf9caa77d24607/svgFiles/NiK-dark%20svg.svg);
     }
     
     .dark-mode {
@@ -18,19 +18,25 @@
       --h1-color: white;
       --h2-color: darkgrey;
       --h3-color: lightgray;
-      --button-color: white;
-    }
-    
-    body {
-      background-color: var(--background-color);
+      --bg-image: url(https://raw.githubusercontent.com/NicKreb/Website-portfolio-page/088fb0feb92a66d04f8129f23daf9caa77d24607/svgFiles/NiK-light%20svg.svg); 
     }
 
-    .button{
-        background-color: Darkgrey;
-        color: var(--button-color);
+    body {
+      background-color: var(--background-color);
+    }   
+
+    #NiKsvg{
         display: flex;
         position: absolute;
-        top: 10%;
-        right: 10%;
-        font-size: 40px;
-      }    
+        width: 148px;
+        height: 150px;
+        top: 5%;
+        right: 5%;
+        background-image: var(--bg-image);
+        overflow: hidden;
+    }
+
+
+    #NiKsvg:hover {
+      cursor: pointer;
+    }
