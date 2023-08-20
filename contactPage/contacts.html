@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contacts</title>
+       
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/websiteportfolio/portfolioWebsite/webpageSrc/darkmodestyle.css">
-        <script src="/websiteportfolio/portfolioWebsite/webpageSrc/darkmode.js"></script>
+      
+        <script src="/darkmode/darkmodeScript.js"></script>
         <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
         <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-        <link rel="stylesheet" href="./contactStyles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/homepage/transitionScripts.js"></script>
+
+        <link rel="stylesheet" href="/darkmode/darkmodeStyles.css">
+        <link rel="stylesheet" href="/contacts/contactStyles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Contacts</title>
+
     </head>
     <body onload="onload()">
         <h1 id="title">&#60;My-Contacts&#62;</h1>
@@ -19,64 +26,63 @@
 
         <div class="contact-list">
             <ul>
-                <li>
+                <li> <!--github-->
                     <a href="https://github.com/NicKreb">
                         <i id="icon-shadow" class="fa fa-brands fa-github"></i> NicKreb Github &#62;
                     </a>
-                </li> <!--github-->
+                </li> 
                 <br>
-                <li>
+                <li>  <!--linkedin-->
                     <a href="http://www.linkedin.com/in/nickreb">
                         <i id="icon-shadow" class="fa fa-brands fa-linkedin"></i> My LinkedIn &#62;
                     </a>
-                </li> <!--linkedin-->
+                </li>
                 <br>
-                <li>
+                <li> <!--email-->
                     <a href="mailto:nicholashstl@outlook.com">
                         <i id="icon-shadow" class="fa fa-solid fa-envelope"></i> Nicholashstl@outlook.com &#62;
                     </a>
-                </li> <!--email-->
+                </li>
                 <br>
-                <li>
+                <li> <!--codepen-->
                     <a href="https://codepen.io/nickreb">
                         <i id="icon-shadow" class="fa fa-brands fa-codepen"></i> NicKreb codePen &#62;
                     </a>
-                </li> <!--codepen-->
+                </li>
             </ul>
         </div>
-        
-        <div class="circle cyan">
 
+        <div class="circle aboutMeTab">
             <div class="regular-font">
-                <a href="/websiteportfolio/portfolioWebsite/aboutMeSrc/aboutMe.html">
-                <svg height="50vh" width="29vw" id="cyanSvg">
-                    <path d="M 60 473, C 60 250, 200 75, 473 80" id="cyan-path" stroke="transparent" fill="transparent"></path>
-                    <text fill="black" font-size="50" font-family="Andale mono" X="200" Y="0">
-                        <textPath href="#cyan-path">About me</textPath>
-                    </text>
-                </svg>
+                <a>
+                    <svg height="50vh" width="29vw" id="aboutMeSvg">
+                         <path d="M 60 473, C 60 250, 200 75, 473 80" id="aboutMe-path" stroke="transparent" fill="transparent"></path>
+                        <text class="text aboutMe" fill="black" font-size="50" font-family="Andale mono" X="200" Y="0">
+                         <textPath href="#aboutMe-path">About me</textPath>
+                        </text>
+                    </svg>
                 </a>
             </div>
-        </div>
+        </div> 
 
-<div class="circle green">
+<div id="projectsTab" class="circle projectsTab">
 
     <div class="regular-font">
-        <a href="/websiteportfolio/portfolioWebsite/projectsSrc/projectsPage.html">
-        <svg height="31.5vh" width="19.5vw" id="greenSvg">
-            <path d="M 60 285, C 60 120, 195 40, 350 60" id="green-path" stroke="transparent" fill="transparent" ></path>
-            <text class="text contact"  fill="black" font-size="40" font-family="Andale mono" x="110" y="0">
-                <textPath href="#green-path">Projects</textPath>
+        <a>
+            <svg height="31.5vh" width="19.5vw" id="greenSvg">
+                <path d="M 60 285, C 60 120, 195 40, 350 60" id="projects-path" stroke="transparent" fill="transparent" ></path>
+            <text class="text projects"  fill="black" font-size="40" font-family="Andale mono" x="110" y="0">
+                <textPath href="#projects-path">Projects</textPath>
             </text>
         </svg>
         </a>
     </div>
 </div>
 
-<a href="/websiteportfolio/portfolioWebsite/webpageSrc/frontpage.html">
-<div class="circle black">
-        <i class="fa fa-solid fa-home"></i>            
-</div>
+<a>
+    <div class="circle black homeTab">
+            <i class="fa fa-solid fa-home"></i>            
+    </div>
 </a>
 </body>
 </html>
