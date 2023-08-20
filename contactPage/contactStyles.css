@@ -48,6 +48,10 @@ a{
   text-decoration: underline;
 }
 
+a:hover{
+  cursor: pointer;
+}
+
 @keyframes fadeIn {
     0% {opacity: 0};
     100% {opacity: 1};
@@ -79,7 +83,8 @@ a{
    position: absolute;
    box-shadow: 10px 10px 50px black;
   }
-  .cyan {
+
+.aboutMeTab {
     background-color: var(--about-me);
     height: 50vh;
     width: 28vw;
@@ -88,12 +93,23 @@ a{
     z-index: 2;
   }
   
-  .cyan:hover {
+.aboutMeTab:hover {
     height: 52vh;
     width: 29vw;
   }
+
+.aboutMeTransition{
+    animation: aboutMeTabTransition 3s;
+  }
+
+@keyframes aboutMeTabTransition {
+    0% {  height: 50vh;
+          width: 28vw; }
+    100% {  height: 150%;
+      width: 150%; }
+  }
   
-  .green {
+.projectsTab {
     background-color: var(--projects);
     height: 32vh;
     width: 18vw;
@@ -102,12 +118,23 @@ a{
     z-index: 3;
   }
   
-  .green:hover {
+.projectsTab:hover {
     height: 34vh;
     width: 20vw;
   }
+
+.projectsTransition{
+    animation: projectsTabTransition 3s;
+  }
+
+@keyframes projectsTabTransition {
+    0% {  height: 32vh;
+          width: 18vw; }
+    100% {  height: 150%;
+      width: 150%; }
+  }
   
-  .black {
+.black {
     display: flex;
     background-color: var(--background-color);
     color: var(--h1-color);
@@ -121,23 +148,37 @@ a{
     z-index: 4;
   }
   
-  .black:hover {
+.black:hover {
     height: 20vh;
     width: 11vw;
   }
-  
-  .regular-font {
+
+.homeTransition{
+    animation: homeTabTransition 3s;
+  }
+
+@keyframes homeTabTransition {
+    0% {  height: 20vh;
+          width: 11vw; 
+          color: var(--background-color)}
+    100% {  height: 150%;
+      width: 150%;
+      color: var(--background-color) }
+  }
+
+.regular-font {
     font-display: flex;
     text-align: right;
     font-size: 50px;
   }
-  #cyanSvg{
+
+#cyanSvg{
     position: absolute;
     bottom: 0;
     right: 0;
   }
   
-  #greenSvg{
+#greenSvg{
     position: absolute;
     right: 0;
     bottom: 0;
