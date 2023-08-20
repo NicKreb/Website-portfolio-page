@@ -87,6 +87,6 @@ body:not(.dark-mode) {
   }
   
   @keyframes svgFadeOut {
-    0% {opacity: 0;}
+    0% {opacity: 1;}
     100% {opacity: 0;}
   }
