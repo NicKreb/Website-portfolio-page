@@ -4,13 +4,15 @@
     <title>Homepage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./darkmodestyle.css">
-    <link rel="stylesheet" href="./webpage.css">
+    <link rel="stylesheet" href="/darkmode/darkmodeStyles.css">
+    <link rel="stylesheet" href="/homepage/homepageStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="./darkmode.js"></script>
+    <script src="/darkmode/darkmodeScript.js"></script>
+    <script src="/homepage/transitionScripts.js"></script>
 </head>
     <body onload="onload()">
         <div class="fade-in-text text-wrapper">
@@ -18,55 +20,51 @@
             <h2>I am a web-developer,</h2>
             <h3>and I have experience in JavaScript, HTML, CSS, Bootstrap, React, and Python!</h3>
         </div>
-
         <div onclick="darkmode()" id="NiKsvg"></div>
 
-          <div class="circle magenta">
+        <div id="projectsTab" class="circle projectsTab">
 
             <div class="regular-font">
-                <a href="/websiteportfolio/portfolioWebsite/projectsSrc/projectsPage.html">
-                <svg height="68vh" width="38vw" id="purpleSvg">
-                    <path d="M 55 650, C 55 350, 200 75, 650 80" id="purple-path" stroke="transparent" fill="transparent"></path>
-                    <text fill="black" font-size="65" font-family="Andale mono" x="300" y="0">
-                       <textPath href="#purple-path">Projects</textPath>
+                <a> <!-- /projects/projects.html -->
+                <svg height="68vh" width="38vw" id="projectsSvg">
+                    <path d="M 55 650, C 55 350, 200 75, 650 80" id="projects-path" stroke="transparent" fill="transparent"></path>
+                    <text class="text projects" fill="black" font-size="65" font-family="Andale mono" x="300" y="0">
+                       <textPath href="#projects-path">Projects</textPath>
                     </text>
                 </svg>
                 </a>
             </div>
         </div>
 
-        <div class="circle cyan">
-
-           
-       <div class="circle cyan">
+        <div class="circle aboutMeTab">
             <div class="regular-font">
-                <a href="/websiteportfolio/portfolioWebsite/aboutMeSrc/aboutMe.html">
-                <svg height="50vh" width="29vw" id="cyanSvg">
-                    <path d="M 60 473, C 60 250, 200 75, 473 80" id="cyan-path" stroke="transparent" fill="transparent"></path>
-                    <text fill="black" font-size="50" font-family="Andale mono" X="200" Y="0">
-                        <textPath href="#cyan-path">About me</textPath>
-                    </text>
-                </svg>
-            </a>
+                <a>
+                    <svg height="50vh" width="29vw" id="aboutMeSvg">
+                         <path d="M 60 473, C 60 250, 200 75, 473 80" id="aboutMe-path" stroke="transparent" fill="transparent"></path>
+                        <text class="text aboutMe" fill="black" font-size="50" font-family="Andale mono" X="200" Y="0">
+                         <textPath href="#aboutMe-path">About me</textPath>
+                        </text>
+                    </svg>
+                </a>
             </div>
-        </div>
+        </div> 
 
-        <div class="circle green">
+        <div class="circle contactsTab">
 
             <div class="regular-font">
-                <a href="/websiteportfolio/portfolioWebsite/contactSrc/contacts.html">
-                <svg height="31.5vh" width="19.5vw" id="greenSvg">
-                    <path d="M 60 285, C 60 120, 195 40, 350 60" id="green-path" stroke="transparent" fill="transparent" ></path>
+                <a>
+                <svg height="31.5vh" width="19.5vw" id="contactSvg">
+                    <path d="M 60 285, C 60 120, 195 40, 350 60" id="contact-path" stroke="transparent" fill="transparent" ></path>
                     <text class="text contact"  fill="black" font-size="40" font-family="Andale mono" x="110" y="0">
-                        <textPath href="#green-path">Contact</textPath>
+                        <textPath href="#contact-path">Contact</textPath>
                     </text>
                 </svg>
                 </a>
             </div>
         </div>
 
-        <a href="./frontpage.html">
-            <div class="circle black">
+        <a>
+            <div class="circle black homeTab">
                     <i class="fa fa-solid fa-home"></i>            
             </div>
         </a>
