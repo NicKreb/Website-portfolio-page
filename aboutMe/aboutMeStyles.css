@@ -33,6 +33,7 @@ body {
    position: absolute;
    box-shadow: 10px 10px 50px black;
   }
+
   .projectsTab {
     background-color: var(--projects);
     height: 50vh;
@@ -120,14 +121,8 @@ body {
     text-align: right;
     font-size: 50px;
   }
-  #projectSvg{
+  #projectSvg, #contactSvg{
     position: absolute;
     bottom: 0;
     right: 0;
   }
-  
-  #contactSvg{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  } 
