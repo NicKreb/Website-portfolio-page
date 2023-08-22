@@ -121,14 +121,8 @@ a:hover{
     font-size: 50px;
   }
   
-  #aboutMeSvg{
+  #aboutMeSvg, #contactSvg{
     position: absolute;
     bottom: 0;
     right: 0;
   }
-  
-  #contactSvg{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  } 
