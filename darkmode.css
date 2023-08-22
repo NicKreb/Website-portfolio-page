@@ -1,47 +1,15 @@
+.dark-mode {
+    --background-color: black;
+    --projects: #3845D7;
+    --about-me: darkcyan;
+    --contacts: green;
+    --h1-color: white;
+    --h2-color: darkgrey;
+    --h3-color: lightgray;
+    --bg-image: url(https://raw.githubusercontent.com/NicKreb/Website-portfolio-page/088fb0feb92a66d04f8129f23daf9caa77d24607/svgFiles/NiK-light%20svg.svg); 
+  }
 
-    body:not(.dark-mode) {
-      --background-color: white;
-      --projects: #E00000;
-      --about-me: #E04B00;
-      --contacts: #E09600;
-      --h1-color: black;
-      --h3-color: #D1D0D0;
-      --h2-color: darkgray;
-      --bg-image: url(https://raw.githubusercontent.com/NicKreb/Website-portfolio-page/088fb0feb92a66d04f8129f23daf9caa77d24607/svgFiles/NiK-dark%20svg.svg);
-    }
-    
-    .dark-mode {
-      --background-color: black;
-      --projects: #3845D7;
-      --about-me: darkcyan;
-      --contacts: green;
-      --h1-color: white;
-      --h2-color: darkgrey;
-      --h3-color: lightgray;
-      --bg-image: url(https://raw.githubusercontent.com/NicKreb/Website-portfolio-page/088fb0feb92a66d04f8129f23daf9caa77d24607/svgFiles/NiK-light%20svg.svg); 
-    }
-
-    body {
-      background-color: var(--background-color);
-    }   
-
-    #NiKsvg{
-        display: flex;
-        position: absolute;
-        width: 148px;
-        height: 150px;
-        top: 5%;
-        right: 5%;
-        background-image: var(--bg-image);
-        overflow: hidden;
-    }
-
-
-    #NiKsvg:hover {
-      cursor: pointer;
-    }
-
-body:not(.dark-mode) {
+  body:not(.dark-mode) {
     --background-color: white;
     --projects: #E00000;
     --about-me: #E04B00;
@@ -52,16 +20,6 @@ body:not(.dark-mode) {
     --bg-image: url(https://raw.githubusercontent.com/NicKreb/Website-portfolio-page/088fb0feb92a66d04f8129f23daf9caa77d24607/svgFiles/NiK-dark%20svg.svg);
   }
   
-  .dark-mode {
-    --background-color: black;
-    --projects: #3845D7;
-    --about-me: darkcyan;
-    --contacts: green;
-    --h1-color: white;
-    --h2-color: darkgrey;
-    --h3-color: lightgray;
-    --bg-image: url(https://raw.githubusercontent.com/NicKreb/Website-portfolio-page/088fb0feb92a66d04f8129f23daf9caa77d24607/svgFiles/NiK-light%20svg.svg); 
-  }
 
   body {
     background-color: var(--background-color);
