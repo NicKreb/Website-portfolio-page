@@ -4,8 +4,8 @@ updated website portfolio using html, css, js
 Stories:
 
 #1 the website should have a drop down menu 
-[#] my name, 
-[#] and a grid display of my projects.
+-[x] my name, 
+-[x] and a grid display of my projects.
 #2 the page should have links to my email, linkedin, codepen, and github
 #3 the page should have different displays depending on what device it is viewed on.
 
