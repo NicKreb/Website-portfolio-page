@@ -4,185 +4,174 @@
     font-family: 'Andale mono';
     }
   
+title, script{
+  visibility: hidden;
+}
+
 a:hover {
   cursor: pointer;
 }
 
-  #NiKsvg {
-    width: 115px;
+#NiKsvg {
+    width: 119px;
     right: 5%;
-  }
+}
   
-  .fade-in-text{
-    animation: fadeIn 3s;
-  }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  .text-wrapper{
-    width: 60vw;
-    height: 50vh;
-  }
-  
-  .text-wrapper h1{
-    color: var(--h1-color);
-    font-size: 8vh;
-  }
-  
-  .text-wrapper h2 {
-    color: var(--h2-color);
-    font-size: 5vh;
-  }
-  
-  .text-wrapper h3 {
-    color: var(--h3-color);
-    font-size: 3vh;
-  }
-  
-  .circle{
-   display: block;
-   border-radius: 90% 0% 0% 0%;
-   position: absolute;
-   box-shadow: 10px 10px 50px black;
-  }
-  
-  .projectsTab {
-    background-color: var(--projects);
-    height: 68vh;
-    width: 38vw;
-    right:  0px;
-    bottom: 0px;
-    z-index: 1;
-  }
-  
-  .projectsTab:hover {
-    height: 70vh;
-    width: 40vw;
-  }
+.fade-in-text{
+  animation: fadeIn 3s;
+}
 
-  .projectsTransition{
-    animation: projectsTabTransition 3s;
-  }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-  @keyframes projectsTabTransition {
-    0% {  height: 68vh;
-          width: 38vw; }
-    100% {  height: 150%;
-      width: 150%; }
-  }
-  
-  .aboutMeTab {
-    background-color: var(--about-me);
-    height: 50vh;
-    width: 28vw;
-    right: 0px;
-    bottom: 0px;
-    z-index: 2;
-  }
-  
-  .aboutMeTab:hover {
-    height: 52vh;
-    width: 29vw;
-  }
-  
-  .aboutMeTransition{
-    animation: aboutMeTabTransition 3s;
-  }
+.text-wrapper{
+  width: 60vw;
+  height: 50vh;
+}
 
-  @keyframes aboutMeTabTransition {
-    0% {  height: 50vh;
-          width: 28vw; }
-    100% {  height: 150%;
-      width: 150%; }
-  }
+.text-wrapper h1{
+  color: var(--h1-color);
+  font-size: 8vh;
+}
 
-  .contactsTab {
-    background-color: var(--contacts);
-    height: 32vh;
-    width: 18vw;
-    right: 0px;
-    bottom: 0px;
-    z-index: 3;
-  }
-  
-  .contactsTab:hover {
-    height: 34vh;
-    width: 20vw;
-  }
+.text-wrapper h2 {
+  color: var(--h2-color);
+  font-size: 5vh;
+}
 
-  .contactsTransition{
-    animation: contactsTabTransition 3s;
-  }
+.text-wrapper h3 {
+  color: var(--h3-color);
+  font-size: 3vh;
+}
 
-  @keyframes contactsTabTransition {
-    0% {  height: 32vh;
-          width: 18vw; 
-      }
-    100% {  height: 150%;
-      width: 150%; 
-      }
-  }
-  
-  .black {
-    display: flex;
-    background-color: var(--background-color);
-    color: var(--h1-color);
-    font-size: 50px;
-    align-items: center;
-    justify-content: center;
-    height: 18vh;
-    width: 9vw;
-    right: 0px;
-    bottom: 0px;
-    z-index: 4;
-  }
-  
-  .black:hover {
-    height: 20vh;
-    width: 11vw;
-  }
+.circle{
+ display: block;
+ border-radius: 90% 0% 0% 0%;
+ position: absolute;
+ box-shadow: 10px 10px 50px black;
+}
 
-  .homeTransition{
-    animation: homeTabTransition 3s;
-  }
+.projectsTab {
+  background-color: var(--projects);
+  height: 68vh;
+  width: 38vw;
+  right:  0px;
+  bottom: 0px;
+  z-index: 1;
+}
 
-  @keyframes homeTabTransition {
-    0% {  height: 20vh;
-          width: 11vw; 
-          color: var(--background-color)}
-    100% {  height: 150%;
-      width: 150%; 
-      color: var(--background-color)}
-  }
+.projectsTab:hover {
+  height: 70vh;
+  width: 40vw;
+}
+
+ .projectsTransition{
+  animation: projectsTabTransition 3s;
+}
+
+ @keyframes projectsTabTransition {
+  0% {  height: 68vh;
+        width: 38vw; }
+  100% {  height: 150%;
+    width: 150%; }
+}
+
+.aboutMeTab {
+  background-color: var(--about-me);
+  height: 50vh;
+  width: 28vw;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.aboutMeTab:hover {
+  height: 52vh;
+  width: 29vw;
+}
+
+.aboutMeTransition{
+  animation: aboutMeTabTransition 3s;
+}
+
+ @keyframes aboutMeTabTransition {
+  0% {  height: 50vh;
+        width: 28vw; }
+  100% {  height: 150%;
+    width: 150%; }
+}
+
+ .contactsTab {
+  background-color: var(--contacts);
+  height: 32vh;
+  width: 18vw;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+}
+
+.contactsTab:hover {
+  height: 34vh;
+  width: 20vw;
+}
+
+ .contactsTransition{
+  animation: contactsTabTransition 3s;
+}
+
+ @keyframes contactsTabTransition {
+  0% {  height: 32vh;
+        width: 18vw; 
+    }
+  100% {  height: 150%;
+    width: 150%; 
+    }
+}
   
-  .text {
-    font-weight: bolder;
-  }
-  
-  .regular-font {
-    font-display: flex;
-    text-align: right;
-    font-size: 50px;
-  }
-  
-  #projectsSvg{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  
-  
-  #aboutMeSvg{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  
-  #contactSvg{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  } 
+.black {
+  display: flex;
+  background-color: var(--background-color);
+  color: var(--h1-color);
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
+  width: 9vw;
+  right: 0px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.black:hover {
+  height: 20vh;
+  width: 11vw;
+}
+.homeTransition{
+  animation: homeTabTransition 3s;
+}
+@keyframes homeTabTransition {
+  0% {  height: 20vh;
+        width: 11vw; 
+        color: var(--background-color)}
+  100% {  height: 150%;
+    width: 150%; 
+    color: var(--background-color)}
+}
+
+.text {
+  font-weight: bolder;
+}
+
+.regular-font {
+  font-display: flex;
+  text-align: right;
+  font-size: 50px;
+}
+
+#projectsSvg, #aboutMeSvg, #contactSvg{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
