@@ -38,7 +38,7 @@ li{
   position: absolute;
   animation: fadeIn 3s;
   left: 2%;
-  font-size: 4em;
+  font-size: 3em;
   padding: 5%;
 }
 
@@ -88,8 +88,8 @@ a:hover{
     background-color: var(--about-me);
     height: 50vh;
     width: 28vw;
-    right: 0px;
-    bottom: 0px;
+    right: 0%;
+    bottom: 0%;
     z-index: 2;
   }
   
@@ -158,13 +158,16 @@ a:hover{
   }
 
 @keyframes homeTabTransition {
-    0% {  height: 20vh;
-          width: 11vw; 
-          color: var(--background-color)}
-    100% {  height: 150%;
-      width: 150%;
-      color: var(--background-color) }
-  }
+  0% {  height: 20vh;
+        width: 11vw; 
+        color: var(--background-color)}
+  100% {  height: 150%;
+    width: 150%;
+    color: var(--background-color) }
+}
+.text {
+  font-weight: bolder;
+}
 
 .regular-font {
     font-display: flex;
@@ -172,14 +175,8 @@ a:hover{
     font-size: 50px;
   }
 
-#cyanSvg{
+#cyanSvg, #greenSvg{
     position: absolute;
     bottom: 0;
     right: 0;
   }
-  
-#greenSvg{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  } 
